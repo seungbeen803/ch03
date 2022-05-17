@@ -8,7 +8,7 @@ struct node {
 
 void deleteLinkedList(struct node* p) {
 	if (p != NULL) {
-		deleteLinkedList(p->link);
+		deleteLinkedList(p->link); // Àç±ÍÈ£Ãâ
 		printf("%c.", p->data);
 		free(p);
 	}
